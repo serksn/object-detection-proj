@@ -4,12 +4,11 @@
 2. Запуск приложение через:
 `python main.py`
 
-## Help
+## Инструкция пользования программой
 При запуске программы вам будет предложено ввести путь к видео и название объекта, который вам необходимо найти и вычислить.
 Если вам нужно найти на изображении несколько объектов, пишите их через запятую.
 Имена объектов писать на английском языке.
 Имена отслеживаемых объектов:
-```
 'person', 'bicycle', 'car', 'motorbike', 'aeroplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
 'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
 'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
@@ -19,4 +18,9 @@
 'pottedplant', 'bed', 'diningtable', 'toilet', 'tvmonitor', 'laptop', 'mouse', 'remote', 'keyboard',
 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors',
 'teddy bear', 'hair drier', 'toothbrush'
-```
+
+## Результат
+Path to video (or URL): Result/input/test.mp4
+What we are looking for: person, car, bus
+
+Все файлы примера сохранены в папке Result
