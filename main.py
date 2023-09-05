@@ -139,8 +139,6 @@ if __name__ == '__main__':
 
     # Logo
     tprint("Object detection")
-    tprint("by")
-    tprint("paveldat")
 
     # Loading YOLO scales from files and setting up the network
     net = cv2.dnn.readNetFromDarknet("Resources/yolov4-tiny.cfg",
