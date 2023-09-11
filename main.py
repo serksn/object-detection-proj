@@ -1,4 +1,5 @@
 import cv2
+import os
 import numpy as np
 from art import tprint
 
@@ -155,13 +156,16 @@ if __name__ == '__main__':
     # The names are in the file coco.names.txt
 
     video = input("Path to video (or URL): ")
-    look_for = input("What we are looking for: ").split(',')
-    
-    # Delete spaces
-    list_look_for = []
-    for look in look_for:
-        list_look_for.append(look.strip())
+    if os.path.isfile(video):
+        look_for = input("What we are looking for: ").split(',')
+        
+        # Delete spaces
+        list_look_for = []
+        for look in look_for:
+            list_look_for.append(look.strip())
 
-    classes_to_look_for = list_look_for
-
-    start_video_object_detection(video)
+        classes_to_look_for = list_look_for
+        start_video_object_detection(video)
+    else:
+        print('This file does not exist')
+        input()
